@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function callTenTimes(callback){
+        for(var i=0; i<10; i++){
+            callback(); //함수선언
+        }
+    }
+    var callback = function(){
+        alert('함수호출');//함수선언
+    }
+    callTenTimes(callback);//함수호출
+    
+    callTenTimes(function(){alert('함수호출');});
+</script>
+<body>
+    
+</body>
+</html>
